@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.endangered-animals {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  .animal-wrapper {
+    width: 30%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 0 10px #000;
+    &:hover {
+        box-shadow: 0 0 50px #000;
+        transform: scale(1.05) !important;
+    }
+    .animal-photo {
+      width: 100%;
+      height: 40%;
+      text-align: center;
+    }
+    .animal-short-info {
+      text-align: center;
+    }
+    .read-more {
+        margin-top: 5%;
+      a {
+        text-decoration: none;
+        border: 1px solid rgb(8, 227, 243);
+        background-color: rgb(8, 227, 243);
+        border-radius: 10px;
+        color: white;
+        padding: 10px 16px;
+        transition: 300ms ease-in-out;
+        &:hover {
+            background-color: #fff;
+            color: rgb(8, 227, 243);
+        }
+      }
+    }
+  }
+}

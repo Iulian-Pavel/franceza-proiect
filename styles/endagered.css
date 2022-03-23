@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-.endangered-animals {
+.endangered {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,10 +16,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 24px;
 }
 
-.endangered-animals .animal-wrapper {
+.endangered .wrapper {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,28 +40,28 @@
           box-shadow: 0 0 10px #000;
 }
 
-.endangered-animals .animal-wrapper:hover {
+.endangered .wrapper:hover {
   -webkit-box-shadow: 0 0 50px #000;
           box-shadow: 0 0 50px #000;
   -webkit-transform: scale(1.05) !important;
           transform: scale(1.05) !important;
 }
 
-.endangered-animals .animal-wrapper .animal-photo {
+.endangered .wrapper .animal-photo {
   width: 100%;
   height: 40%;
   text-align: center;
 }
 
-.endangered-animals .animal-wrapper .animal-short-info {
+.endangered .wrapper .short-info {
   text-align: center;
 }
 
-.endangered-animals .animal-wrapper .read-more {
+.endangered .wrapper .read-more {
   margin-top: 5%;
 }
 
-.endangered-animals .animal-wrapper .read-more a {
+.endangered .wrapper .read-more a {
   text-decoration: none;
   border: 1px solid #08e3f3;
   background-color: #08e3f3;
@@ -70,7 +72,7 @@
   transition: 300ms ease-in-out;
 }
 
-.endangered-animals .animal-wrapper .read-more a:hover {
+.endangered .wrapper .read-more a:hover {
   background-color: #fff;
   color: #08e3f3;
 }

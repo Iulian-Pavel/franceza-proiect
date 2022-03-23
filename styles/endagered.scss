@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
-.endangered-animals {
+.endangered {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   padding: 24px;
-  .animal-wrapper {
+  .wrapper {
     width: 30%;
     display: flex;
     justify-items: center;
@@ -30,7 +31,7 @@
       height: 40%;
       text-align: center;
     }
-    .animal-short-info {
+    .short-info {
       text-align: center;
     }
     .read-more {
